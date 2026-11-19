@@ -7,7 +7,6 @@ background-color: #04243c;
 margin: auto;
 }
 
-
 #totem-web {
     background-color: white;
     color: #04243c;
@@ -145,7 +144,6 @@ footer p {
 .imagens-crescimento .galeria img {
   display: block;
   width: 100%;
-  aspect-ratio: 4 / 3;
   object-fit: cover;
 }
 
