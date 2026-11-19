@@ -1,0 +1,298 @@
+body {
+    font-family: 'Fira Sans', sans-serif;
+}
+
+header {
+background-color: #04243c;
+margin: auto;
+}
+
+
+#totem-web {
+    background-color: white;
+    color: #04243c;
+    padding: 5px 10px;
+    transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.menu {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    gap: 20px;
+}
+
+.menu a {
+    transition: color 0.2s ease;
+}
+
+.menu a:hover {
+    color: #edc542;
+    border-bottom: 3px solid #edc542;
+}
+
+
+#totem-web:hover {
+    background-color: #edc542;
+    color: #04243c;
+    border-bottom: 0;
+}
+
+li a{
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+footer {
+    background-color: #04243c;
+    color: white;
+    text-align: center;
+    padding: 40px 20px 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: flex-start;
+    gap: 30px;
+}
+
+#logoFooter {
+    object-fit: contain;
+    margin-bottom: 10px;
+}
+
+footer .container {
+    flex: 1 1 200px;
+}
+
+.redes-sociais {
+    align-items: left;
+    display: block;
+    list-style-type: none;
+    justify-content: left;
+    gap: 10px;
+    margin-top: 10px;
+    font-size: 18px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.redes-sociais-container {
+    display: flex;
+    justify-content: left;
+    flex: 1 1 250px;
+}
+
+.redes-sociais li,
+.contato-lista li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 12px;
+    font-size: 16px;
+}
+
+footer h4 {
+    font-size: 18px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+    padding-bottom: 8px;
+    border-bottom: 2px solid #e4b61e;
+    display: inline-block;
+}
+
+footer p {
+    flex: 0 0 100%;
+    text-align: center;
+    margin: 20px 0 0;
+    padding-top: 15px;
+    border-top: 1px solid #ffffff;
+    font-size: 13px;
+    color: #fdfeff;
+}
+
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+.imagens-crescimento {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+  margin: 24px 0;
+}
+
+.imagens-crescimento .galeria {
+  border: 1px solid #edc542;
+  border-radius: 8px;
+  overflow: hidden;
+  background: #edc542;
+  transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+}
+
+.imagens-crescimento .galeria:hover {
+  border-color: #6b581b;
+  box-shadow: 0 6px 16px #868069
+}
+
+.imagens-crescimento .galeria img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+}
+
+.imagens-crescimento .desc {
+  padding: 15px;
+  text-align: center;
+}
+
+table, th, td {
+  border: 2px solid #6b581b;
+  padding: 10px;
+  text-align: center;
+}
+
+table{
+    width: 50%; 
+    margin: 0 auto;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+th {
+    background-color: #edc542;
+}
+
+.comeco-historia h1 {
+  font-weight: 600;
+  padding: 10px;
+  padding-top: 40px;
+  padding-left: 40px;
+}
+
+.crescimento h1 {
+  font-weight: 600;
+  padding: 10px;
+  padding-top: 20px;
+  padding-left: 40px;
+}
+
+.expansao h1 {
+  font-weight: 600;
+  padding: 10px;
+  padding-top: 20px;
+  padding-left: 40px;
+}
+
+.atualmente h1 {
+  font-weight: 600;
+  padding: 10px;
+  padding-top: 20px;
+  padding-left: 40px;
+}
+
+.atualmente h3 {
+  font-weight: 600;
+  padding-top: 10px;
+  padding-left: 40px;
+}
+p {
+  padding-left: 40px;
+  padding-right: 40px;
+  font-size: 18px;
+  justify-content: center;
+  text-align: justify;
+}
+
+main ul {
+  padding: 10px;
+  padding-left: 40px;
+  font-size: 18px;
+}
+
+.audio-historia {
+    display: block;
+    width: 100%;
+    max-width: 500px;
+    margin: 20px auto;
+    border-radius: 50px;
+    border: 2px solid #04243c;
+    background-color: #f3f5f9;
+    box-shadow: 0 4px 12px rgba(4, 36, 60, 0.2);
+}
+
+html {
+       overflow-y: scroll;
+   }
+
+@media (max-width: 768px) {
+    header .container-fluid {
+        flex-direction: column;
+        gap: 10px;
+        padding-bottom: 10px;
+    }
+
+    .menu {
+        flex-wrap: wrap;
+        gap: 10px 15px;
+        padding: 0 10px;
+    }
+
+    #logoHome {
+        max-width: 100%;
+        height: auto;
+    }
+
+    footer {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .redes-sociais-container {
+        justify-content: center;
+    }
+}
+
+
+@media (max-width: 992px) {
+    .imagens-crescimento {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .imagens-crescimento {
+        grid-template-columns: 1fr;
+        padding: 0 16px;
+    }
+
+    p,
+    main ul {
+        padding-left: 16px;
+        padding-right: 16px;
+        font-size: 16px;
+    }
+
+    .comeco-historia h1,
+    .crescimento h1,
+    .expansao h1,
+    .atualmente h1,
+    .atualmente h3 {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+    table {
+        width: 95%;
+        font-size: 14px;
+    }
+}
+

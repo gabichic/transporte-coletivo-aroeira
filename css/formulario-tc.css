@@ -1,0 +1,268 @@
+body {
+    font-family: 'Fira Sans', sans-serif;
+}
+
+textarea {
+    resize: none;
+}
+
+header {
+background-color: #04243c;
+margin: auto;
+}
+
+
+#totem-web {
+    background-color: white;
+    color: #04243c;
+    padding: 5px 10px;
+    transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.menu {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    gap: 20px;
+}
+
+.menu a {
+    transition: color 0.2s ease;
+}
+
+.menu a:hover {
+    color: #edc542;
+    border-bottom: 3px solid #edc542;
+}
+
+
+#totem-web:hover {
+    background-color: #edc542;
+    color: #04243c;
+    border-bottom: 0;
+}
+
+li a{
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.formulario-tc-titulo {
+    max-width: 720px;
+    margin: 25px auto 5px;
+    text-align: center;
+}
+
+.formulario-tc-titulo h1 {
+    font-weight: 800;
+    color: #04243c;
+}
+ 
+.formulario-tc-titulo p {
+    margin: 0;
+    font-size: 18px;
+    color: #04243c;
+    margin-bottom: 20px;
+}
+
+.formulario-tc {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 40px;
+    background: #ffffff;
+    border-radius: 10px;
+    border: 1px solid #04243c;
+    box-shadow: 0 8px 25px #2b2e30;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 40px;
+}
+
+.formulario-tc label {
+    font-weight: 800;
+    font-size: 18px;
+    color: #04243c;
+    margin: 16px 0 10px;
+}
+
+.formulario-tc input,
+.formulario-tc select,
+.formulario-tc textarea {
+    width: 100%;
+    padding: 10px 10px;
+    font-size: 17px;
+    color: #04243c;
+    background: #fbfcfe;
+    border: 1.5px solid #04243c;
+    border-radius: 8px;
+}
+ 
+.formulario-tc ::placeholder {
+    color: #90a2c4;
+}
+ 
+.formulario-tc input:hover,
+.formulario-tc select:hover,
+.formulario-tc textarea:hover {
+    border-color: #edc542;
+}
+ 
+.formulario-tc input:focus,
+.formulario-tc select:focus,
+.formulario-tc textarea:focus {
+    outline: none;
+    background: #fff;
+    border-color: #04243c;
+    box-shadow: 0 0 0 2px #edc542
+}
+
+
+.formulario-tc select:disabled {
+    background: #eceff5;
+    color: #98a2b5;
+    cursor: not-allowed;
+}
+
+.area {
+    display: flex;
+    flex-direction: column;
+}
+
+.formulario-tc input:user-invalid,
+.formulario-tc select:user-invalid,
+.formulario-tc textarea:user-invalid {
+    border-color: red;
+}
+ 
+.btn-enviar {
+    margin-top: 18px;
+    align-self: center;
+    padding: 12px 20px;
+    font-weight: 600;
+    font-size: 18px;
+    color: #04243c;
+    background: #edc542;
+    border: 0;
+    border-radius: 8px;
+}
+ 
+.btn-enviar:hover {
+    background: #e4b61e;
+}
+
+html {
+       overflow-y: scroll;
+   }
+
+footer {
+    background-color: #04243c;
+    color: white;
+    text-align: center;
+    padding: 40px 20px 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: flex-start;
+    gap: 30px;
+}
+
+#logoFooter {
+    object-fit: contain;
+    margin-bottom: 10px;
+}
+
+footer .container {
+    flex: 1 1 200px;
+}
+
+.redes-sociais {
+    align-items: left;
+    display: block;
+    list-style-type: none;
+    justify-content: left;
+    gap: 10px;
+    margin-top: 10px;
+    font-size: 18px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.redes-sociais-container {
+    display: flex;
+    justify-content: left;
+    flex: 1 1 250px;
+}
+
+.redes-sociais li,
+.contato-lista li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 12px;
+    font-size: 16px;
+}
+
+footer h4 {
+    font-size: 18px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+    padding-bottom: 8px;
+    border-bottom: 2px solid #e4b61e;
+    display: inline-block;
+}
+
+footer p {
+    flex: 0 0 100%;
+    text-align: center;
+    margin: 20px 0 0;
+    padding-top: 15px;
+    border-top: 1px solid #ffffff;
+    font-size: 13px;
+    color: #fdfeff;
+}
+
+@media (max-width: 768px) {
+    header .container-fluid {
+        flex-direction: column;
+        gap: 10px;
+        padding-bottom: 10px;
+    }
+
+    .menu {
+        flex-wrap: wrap;
+        gap: 10px 15px;
+        padding: 0 10px;
+    }
+
+    #logoHome {
+        max-width: 100%;
+        height: auto;
+    }
+
+    footer {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .redes-sociais-container {
+        justify-content: center;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .formulario-tc input,
+    .formulario-tc select,
+    .formulario-tc textarea {
+        font-size: 16px;
+    }
+
+    .btn-enviar {
+        width: 100%;
+    }
+}

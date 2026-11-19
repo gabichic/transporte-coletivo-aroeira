@@ -1,0 +1,309 @@
+body {
+    font-family: 'Fira Sans', sans-serif;
+    background-color: #f3f5f9;
+}
+
+header {
+background-color: #04243c;
+margin: auto;
+}
+
+
+#totem-web {
+    background-color: white;
+    color: #04243c;
+    padding: 5px 10px;
+    transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.menu {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    gap: 20px;
+}
+
+.menu a {
+    transition: color 0.2s ease;
+}
+
+.menu a:hover {
+    color: #edc542;
+    border-bottom: 3px solid #edc542;
+}
+
+
+#totem-web:hover {
+    background-color: #edc542;
+    color: #04243c;
+    border-bottom: 0;
+}
+
+li a{
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+footer {
+    background-color: #04243c;
+    color: white;
+    text-align: center;
+    padding: 40px 20px 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: flex-start;
+    gap: 30px;
+}
+
+#logoFooter {
+    object-fit: contain;
+    margin-bottom: 10px;
+}
+
+footer .container {
+    flex: 1 1 200px;
+}
+
+.redes-sociais {
+    align-items: left;
+    display: block;
+    list-style-type: none;
+    justify-content: left;
+    gap: 10px;
+    margin-top: 10px;
+    font-size: 18px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.redes-sociais-container {
+    display: flex;
+    justify-content: left;
+    flex: 1 1 250px;
+}
+
+.redes-sociais li,
+.contato-lista li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 12px;
+    font-size: 16px;
+}
+
+footer h4 {
+    font-size: 18px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+    padding-bottom: 8px;
+    border-bottom: 2px solid #e4b61e;
+    display: inline-block;
+}
+
+main a {
+    padding-left: 5px;
+}
+
+footer p {
+    flex: 0 0 100%;
+    text-align: center;
+    margin: 20px 0 0;
+    padding-top: 15px;
+    border-top: 1px solid #ffffff;
+    font-size: 13px;
+    color: #fdfeff;
+}
+
+html {
+       overflow-y: scroll;
+   }
+
+.banner {
+    width: 100%;
+    height: 450px;
+}
+
+.banner img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center 60%;
+}
+
+.card {
+    border: none;
+    background: transparent;
+}
+
+.card-body {
+    background-color: #04243c;
+    color: white;
+    border-radius: 10px;
+    padding: 20px;
+    border: 2px solid #04243c;
+}
+
+.card-body:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 24px rgba(3, 22, 36, 0.436);
+}
+
+.card-img-top {
+    padding-bottom: 5px;
+    border-radius: 10px;
+}
+
+ .location-card {
+    display: flex;
+    max-width: 1000px;
+    margin: 0 auto;
+    background: #fff;
+    border-radius: 24px;
+    overflow: hidden;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, .12);
+    font-family: system-ui, sans-serif;
+  }
+ 
+  .card-content {
+    flex: 1;
+    padding: 40px;
+  }
+  .card-content h3 { margin: 0 0 8px; font-size: 32px; color: #16213e; }
+  .card-content p  { margin: 4px 0; color: #444; }
+
+  
+  .btn-card {
+    background-color: white;
+    color: #04243c;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+  }
+
+  .btn-card:hover {
+    background-color: #0c3e64;
+    color: white;
+  }
+ 
+
+  .map-container {
+    flex: 1.3;
+    min-height: 400px;
+  }
+  .map-container iframe {
+    width: 100%;
+    height: 100%;
+    border: 0;
+  }
+
+  .location-card {
+    background-color: white;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, .12);
+    margin: 40px auto;
+  }
+
+ .location-card h3,
+.location-card p { font-weight: bold; }
+
+  #btn-directions {
+    padding: 15px;
+    text-decoration: none;
+    font-weight: bold;
+    background-color: #04243c;
+    color: white;
+  }
+
+  #btn-directions:hover {
+    background-color: #0c3e64;
+    color: white;
+  }
+
+  .sustentabilidade {
+    background-color: #043c32;
+    color: white;
+    align-items: center;
+    text-align: center;
+    padding: 40px;
+    font-size: 20px;
+  }
+
+  .sustentabilidade h1 {
+    font-weight: bold;
+    padding-bottom: 20px;
+  }
+
+  .btn-sustentavel {
+    background-color: white;
+    color: #043c32;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+  } 
+
+   .btn-sustentavel:hover {
+    background-color: #10564a;
+    color: white;
+   }
+
+@media (max-width: 768px) {
+    header .container-fluid {
+        flex-direction: column;
+        gap: 10px;
+        padding-bottom: 10px;
+    }
+
+    .menu {
+        flex-wrap: wrap;
+        gap: 10px 15px;
+        padding: 0 10px;
+    }
+
+    #logoHome {
+        max-width: 100%;
+        height: auto;
+    }
+
+    footer {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .redes-sociais-container {
+        justify-content: center;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .banner {
+        height: 220px;
+    }
+
+    .location-card {
+        flex-direction: column;
+        margin: 20px 10px;
+    }
+
+    .card-content {
+        padding: 20px;
+    }
+
+    .map-container {
+        min-height: 300px;
+    }
+
+    .sustentabilidade {
+        padding: 20px;
+        font-size: 16px;
+    }
+}
+

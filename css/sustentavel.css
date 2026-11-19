@@ -1,0 +1,242 @@
+body {
+    font-family: 'Fira Sans', sans-serif;
+    background-color: #d0ffd2;
+}
+
+header {
+background-color: #043c32;
+margin: auto;
+}
+
+
+#totem-web {
+    background-color: white;
+    color: #043c32;
+    padding: 5px 10px;
+    transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+
+#totem-web:hover {
+    background-color: #edc542;
+    color: #043c32;
+    border-bottom: 0;
+}
+.menu {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    gap: 20px;
+}
+
+.menu a {
+    transition: color 0.2s ease;
+}
+
+.menu a:hover {
+    color: #edc542;
+    border-bottom: 3px solid #edc542;
+}
+
+
+
+li a{
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+footer {
+    background-color: #043c32;
+    color: white;
+    text-align: center;
+    padding: 40px 20px 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: flex-start;
+    gap: 30px;
+}
+
+#logoFooter {
+    object-fit: contain;
+    margin-bottom: 10px;
+}
+
+footer .container {
+    flex: 1 1 200px;
+}
+
+.redes-sociais {
+    align-items: left;
+    display: block;
+    list-style-type: none;
+    justify-content: left;
+    gap: 10px;
+    margin-top: 10px;
+    font-size: 18px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.redes-sociais-container {
+    display: flex;
+    justify-content: left;
+    flex: 1 1 250px;
+}
+
+.redes-sociais li,
+.contato-lista li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 12px;
+    font-size: 16px;
+}
+
+footer h4 {
+    font-size: 18px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+    padding-bottom: 8px;
+    border-bottom: 2px solid #e4b61e;
+    display: inline-block;
+}
+
+footer p {
+    flex: 0 0 100%;
+    text-align: center;
+    margin: 20px 0 0;
+    padding-top: 15px;
+    border-top: 1px solid #ffffff;
+    font-size: 13px;
+    color: #fdfeff;
+}
+
+table, th, td {
+  border: 2px solid #043c32;
+  padding: 10px;
+  text-align: center;
+  background-color: #b8f0bb;
+
+}
+
+table{
+    width: 50%; 
+    margin: 0 auto;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+     font-size: 18px;
+}
+
+th {
+    background-color: #074a3e;
+    color: #ffffff;
+}
+
+.intro h1 {
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 10px;
+    padding-top: 60px;
+    padding-right: 40px;
+    padding-left: 40px;
+    color: #043c32;
+}
+
+.intro p {
+    text-align: center;
+    font-size: 20px;
+    padding-top: 20px;
+    padding-right: 80px;
+    padding-left: 80px;
+    padding-bottom: 20px;
+}
+
+.video-sus {
+    width: fit-content;
+    max-width: 100%;
+    margin: 0 auto;
+    border-radius: 12px;
+    border: 4px solid #043c32;
+    overflow: hidden;
+}
+
+.video-sus video {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.tabela h2 {
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 10px;
+    padding-top: 40px;
+    padding-right: 40px;
+    padding-left: 40px;
+    color: #043c32;
+}
+
+.tabela p {
+    text-align: justify;
+    font-size: 20px;
+    padding-top: 20px;
+    padding-right: 80px;
+    padding-left: 80px;
+    padding-bottom: 10px;
+}
+
+@media (max-width: 768px) {
+    header .container-fluid {
+        flex-direction: column;
+        gap: 10px;
+        padding-bottom: 10px;
+    }
+
+    .menu {
+        flex-wrap: wrap;
+        gap: 10px 15px;
+        padding: 0 10px;
+    }
+
+    #logoHome {
+        max-width: 100%;
+        height: auto;
+    }
+
+    footer {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .redes-sociais-container {
+        justify-content: center;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .intro h1,
+    .tabela h2 {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+    .intro p,
+    .tabela p {
+        padding-left: 16px;
+        padding-right: 16px;
+        font-size: 16px;
+    }
+
+    table {
+        width: 95%;
+        font-size: 14px;
+    }
+}
+

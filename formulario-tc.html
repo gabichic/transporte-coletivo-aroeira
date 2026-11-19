@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/formulario-tc.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Martel+Sans:wght@200;300;400;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="img/logo1-azul.png">
+    <title>Formulário Trabalhe Conosco</title>
+
+    <style>
+        .menuativo {
+            border-style: solid;
+            border-color: #edc542;
+            border-width: 0 0 3px 0;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <nav class="container nav-fill w-100">
+            <div class="container-fluid align-items-center d-flex justify-content-between">
+                <a class="navbar-brand" href="#">
+                    <img src="img/logo-azul.png" alt="logotipo" width="270px" height="100px" id="logoHome">
+                </a>
+
+                <ul class="menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="historia.html">Quem Somos</a></li>
+                    <li><a href="contato.html">Contato</a></li>
+                    <li><a class="menuativo" href="formulario-tc.html" target="_blank">Trabalhe Conosco</a></li>
+                    <li><a href="totem-web.html" target="_blank" id="totem-web">Totem Web</a></li>
+                    <li><a href="https://www.urbs.curitiba.pr.gov.br/portal/" target="_blank" id="totem-web">URBS</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+
+    <main>
+        <div class="formulario-tc-titulo">
+            <h1>Trabalhe Conosco!</h1>
+            <p>Venha fazer parte do nosso time!</p>
+        </div>
+
+        <form class="formulario-tc" action="#" method="post" enctype="multipart/form-data">
+            <label for="form-name">Nome Completo</label>
+            <input type="text" id="form-name" name="nome" placeholder="Digite o seu nome completo" required pattern=".{2,}" title="Nome deve ter pelo menos 2 caracteres">
+            <label for="email">E-mail</label>
+            <input type="email" id="email" name="email" placeholder="Digite o seu e-mail" required>
+            <label for="form-number">Celular</label>
+            <input type="tel" id="form-number" name="celular" placeholder="(00) 00000-0000"
+                pattern="^\([1-9]{2}\)\s?[9]{1}[0-9]{4}-[0-9]{4}$" minlength="10" maxlength="14" required>
+            <div class="formu-estado">
+                <label for="form-state">Estado</label>
+                <select name="estado" id="form-state" required>
+                    <option value="" selected disabled>Selecione o seu estado</option>
+                    <option value="1">Paraná</option>
+                    <option value="2">Santa Catarina</option>
+                </select>
+                <label for="cidade">Cidade</label>
+                <select id="cidade" name="cidade" disabled>
+                    <option value="">Selecione a sua cidade</option>
+                </select>
+            </div>
+
+            <div class="area">
+                <label for="area">Area de Interesse</label>
+                <select name="area" id="area" required>
+                    <option value="" selected disabled>Selecione a sua area de interesse</option>
+                    <option value="A">Tecnologia</option>
+                    <option value="B">Administração</option>
+                    <option value="C">Manutenção</option>
+                    <option value="D">Financeiro</option>
+                </select>
+            </div>
+
+            <div class="curriculo">
+                <label for="arquivo-doc">Envie o seu documento:</label>
+                <input type="file" id="arquivo-doc" name="documento">
+            </div>
+
+            <label for="mensagem">Nos fale um pouco sobre você!</label>
+            <textarea id="mensagem" name="mensagem" rows="10" cols="80" placeholder="Digite a sua mensagem" minlength="8" required></textarea>
+
+            <button type="submit" class="btn-enviar" id="enviar">Enviar candidatura</button>
+        </form>
+
+    </main>
+
+        <footer>
+        <div class="container d-flex justify-content-center align-items-center">
+            <img src="img/logo2.png" alt="logotipo" width="150px" height="150px" id="logoFooter">
+        </div>
+
+        <div class="redes-sociais-container">
+            <ul class="redes-sociais">
+                 <h4>SIGA-NOS</h4>
+                <li>
+                    <img src="img/instagram-circle.png" alt="Instagram" width="30px" height="30px">
+                    <a href="https://www.instagram.com/transportecoletivoaroeira/" target="_blank">@TransporteColetivoAroeira</a>
+                </li>
+                <li>
+                    <img src="img/facebook (2).png" alt="Facebook" width="30px" height="30px">
+                    <a href="https://www.facebook.com/profile.php?id=61596211351016" target="_blank">Transporte Coletivo Aroeira</a>
+                </li>
+                <li>
+                    <img src="img/youtube (2).png" alt="Youtube" width="30px" height="30px">
+                    <a href="https://www.youtube.com/channel/UCSySP_nSe_MnzeuQm8VsVvQ" target="_blank">Transporte Coletivo Aroeira</a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="contato">
+            <h4>CONTATO</h4>
+            <ul class="contato-lista">
+                <li>
+                    <img src="img/phone.png" alt="Telefone" width="30px" height="30px">
+                    <span>(41) 99879-4774</span>
+                </li>
+                <li>
+                    <img src="img/email.png" alt="Email" width="30px" height="30px">
+                    <span>transportecoletivoaroeira@gmail.com</span>
+                </li>
+
+                <li>
+                    <img src="img/location.png" alt="Localização" width="30px" height="30px">
+                    <span>Av. Presidente Affonso Camargo, 330 - Jardim Botânico, Curitiba</span>
+                    </li>
+            </ul>
+        </div>
+         <p>© 2026 Transporte Coletivo Aroeira. Todos os direitos reservados.</p>
+    </footer>
+
+
+    <script src="js/formulario-tc.js"></script>
+
+</body>
+
+</html>

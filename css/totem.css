@@ -1,0 +1,235 @@
+body {
+    font-family: 'Fira Sans', sans-serif;
+}
+
+header {
+background-color: #04243c;
+margin: auto;
+}
+
+
+#totem-web {
+    background-color: white;
+    color: #04243c;
+    padding: 5px 10px;
+    transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.menu {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    gap: 20px;
+}
+
+.menu a {
+    transition: color 0.2s ease;
+}
+
+.menu a:hover {
+    color: #edc542;
+    border-bottom: 3px solid #edc542;
+}
+
+
+#totem-web:hover {
+    background-color: #edc542;
+    color: #04243c;
+    border-bottom: 0;
+}
+
+li a{
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+footer {
+    background-color: #04243c;
+    color: white;
+    text-align: center;
+    padding: 40px 20px 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: flex-start;
+    gap: 30px;
+}
+
+#logoFooter {
+    object-fit: contain;
+    margin-bottom: 10px;
+}
+
+footer .container {
+    flex: 1 1 200px;
+}
+
+.redes-sociais {
+    align-items: left;
+    display: block;
+    list-style-type: none;
+    justify-content: left;
+    gap: 10px;
+    margin-top: 10px;
+    font-size: 18px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.redes-sociais-container {
+    display: flex;
+    justify-content: left;
+    flex: 1 1 250px;
+}
+
+.redes-sociais li,
+.contato-lista li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 12px;
+    font-size: 16px;
+}
+
+footer h4 {
+    font-size: 18px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+    padding-bottom: 8px;
+    border-bottom: 2px solid #e4b61e;
+    display: inline-block;
+}
+
+footer p {
+    flex: 0 0 100%;
+    text-align: center;
+    margin: 20px 0 0;
+    padding-top: 15px;
+    border-top: 1px solid #ffffff;
+    font-size: 13px;
+    color: #fdfeff;
+}
+
+html {
+       overflow-y: scroll;
+   }
+
+
+main {
+    display: flex;
+    min-height: 100vh;
+}
+.titulo {
+    background-image: url('../img-totem/banner-totem.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 120px;
+    padding: 100px 20px;
+}
+
+.titulo h1 {
+    color: #ffffff;
+    font-weight: bold;
+    text-shadow: 1px 1px 2px black, 0 0 25px black, 0 0 5px black;
+}
+
+
+.login {
+    background-color: #fdfdfd;
+    color: #04243c;
+    padding: 20px;
+    margin: 20px auto;
+    border-radius: 8px;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.login label {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.login ::placeholder {
+    color: #90a2c4;
+}
+
+.btn-enviar {
+    margin-top: 18px;
+    align-self: center;
+    padding: 12px 20px;
+    font-weight: 600;
+    font-size: 18px;
+    color: #04243c;
+    background: #edc542;
+    border: 0;
+    border-radius: 8px;
+}
+ 
+.btn-enviar:hover {
+    background: #e4b61e;
+}
+
+@media (max-width: 768px) {
+    header .container-fluid {
+        flex-direction: column;
+        gap: 10px;
+        padding-bottom: 10px;
+    }
+
+    .menu {
+        flex-wrap: wrap;
+        gap: 10px 15px;
+        padding: 0 10px;
+    }
+
+    #logoHome {
+        max-width: 100%;
+        height: auto;
+    }
+
+    footer {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .redes-sociais-container {
+        justify-content: center;
+    }
+}
+
+
+@media (max-width: 768px) {
+    main {
+        flex-direction: column;
+        min-height: auto;
+    }
+
+    .titulo {
+        padding: 60px 20px;
+        gap: 40px;
+    }
+
+    .titulo h1 {
+        font-size: 1.8rem;
+    }
+
+    .login {
+        width: 90%;
+    }
+}
+

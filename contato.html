@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/contato.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Martel+Sans:wght@200;300;400;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="./img/logo1-azul.png">
+    <title>Contato</title>
+
+    <style>
+        .menuativo {
+            border-style: solid;
+            border-color: #edc542;
+            border-width: 0 0 3px 0;
+        }
+    </style>
+</head>
+<body>
+
+    
+
+    <header>
+        <nav class="container nav-fill w-100">
+            <div class="container-fluid align-items-center d-flex justify-content-between">
+                <a class="navbar-brand" href="#">
+                    <img src="img/logo-azul.png" alt="logotipo" width="270px" height="100px" id="logoHome">
+                </a>
+
+                <ul class="menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="historia.html">Quem Somos</a></li>
+                    <li><a class="menuativo" href="contato.html">Contato</a></li>
+                    <li><a href="formulario-tc.html" target="_blank">Trabalhe Conosco</a></li>
+                    <li><a href="totem-web.html" target="_blank" id="totem-web">Totem Web</a></li>
+                    <li><a href="https://www.urbs.curitiba.pr.gov.br/portal/" target="_blank" id="totem-web">URBS</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+              <div class="contato-form-titulo">
+            <h1>Entre em contato com a gente!</h1>
+        </div>
+
+        <div class="contato-linha">
+
+        <form class="contato-form" action="#" method="post" enctype="multipart/form-data">
+            <label for="cont-name">Nome Completo</label>
+            <input type="text" id="cont-name" name="nome" placeholder="Digite o seu nome completo" required pattern=".{2,}" title="Nome deve ter pelo menos 2 caracteres">
+            <label for="email">E-mail</label>
+            <input type="email" id="email" name="email" placeholder="Digite o seu e-mail" required>
+            <label for="cont-number">Celular</label>
+            <input type="tel" id="cont-number" name="celular" placeholder="(00) 00000-0000"
+                pattern="^\([1-9]{2}\)\s?[9]{1}[0-9]{4}-[0-9]{4}$" minlength="10" maxlength="14" required>
+
+
+            <div class="area">
+                <label for="area">Tipo de Cliente</label>
+                <select name="area" id="area" required>
+                    <option value="" selected disabled>Selecione o seu tipo de cliente</option>
+                    <option value="A">Pessoa Física</option>
+                    <option value="B">Pessoa Jurídica</option>
+                </select>
+            </div>
+
+            <label for="mensagem">Digite a sua mensagem:</label>
+            <textarea id="mensagem" name="mensagem" rows="10" cols="80" placeholder="Digite a sua mensagem" minlength="8" required></textarea>
+
+            <button type="submit" class="btn-enviar" id="enviar">Enviar contato</button>
+        </form>
+
+    <div class="location-card">
+  <div class="card-content">
+    <h3>Venha nos visitar!</h3>
+    <p>Av. Presidente Affonso Camargo, 330</p>
+    <p>Jardim Botânico · Curitiba/PR</p>
+    <br>
+    <p>Horário de atendimento: Segunda a Sexta-feira, das 08:00 às 17:00</p>
+    <br>
+    <a href="https://www.google.com/maps/dir//Av.+Presidente+Affonso+Camargo,+330+-+Jardim+Bot%C3%A2nico,+Curitiba+-+PR,+80060-090/@-25.4353111,-49.2536797,17z/data=!4m18!1m8!3m7!1s0x94dce45008316187:0xa45df566914009e5!2sAv.+Presidente+Affonso+Camargo,+330+-+Jardim+Bot%C3%A2nico,+Curitiba+-+PR,+80060-090!3b1!8m2!3d-25.4353111!4d-49.2536797!16s%2Fg%2F11nnkry5k0!4m8!1m0!1m5!1m1!1s0x94dce45008316187:0xa45df566914009e5!2m2!1d-49.2536797!2d-25.4353111!3e3?entry=ttu&g_ep=EgoyMDI2MTEwOC4wIKXMDSoASAFQAw%3D%3D" class="btn" target="_blank" id="btn-directions">Como chegar</a>
+  </div>
+ 
+  <div class="map-container">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3603.0883064479963!2d-49.256254624828095!3d-25.435311077558456!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94dce45008316187%3A0xa45df566914009e5!2sAv.%20Presidente%20Affonso%20Camargo%2C%20330%20-%20Jardim%20Bot%C3%A2nico%2C%20Curitiba%20-%20PR%2C%2080060-090!5e0!3m2!1spt-PT!2sbr!4v1794340828627!5m2!1spt-PT!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+  </div>
+ 
+</div>
+</div>
+    </main>
+
+
+    <footer>
+        <div class="container d-flex justify-content-center align-items-center">
+            <img src="img/logo2.png" alt="logotipo" width="150px" height="150px" id="logoFooter">
+        </div>
+
+        <div class="redes-sociais-container">
+            <ul class="redes-sociais">
+                 <h4>SIGA-NOS</h4>
+                <li>
+                    <img src="img/instagram-circle.png" alt="Instagram" width="30px" height="30px">
+                    <a href="https://www.instagram.com/transportecoletivoaroeira/" target="_blank">@TransporteColetivoAroeira</a>
+                </li>
+                <li>
+                    <img src="img/facebook (2).png" alt="Facebook" width="30px" height="30px">
+                    <a href="https://www.facebook.com/profile.php?id=61596211351016" target="_blank">Transporte Coletivo Aroeira</a>
+                </li>
+                <li>
+                    <img src="img/youtube (2).png" alt="Youtube" width="30px" height="30px">
+                    <a href="https://www.youtube.com/channel/UCSySP_nSe_MnzeuQm8VsVvQ" target="_blank">Transporte Coletivo Aroeira</a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="contato">
+            <h4>CONTATO</h4>
+            <ul class="contato-lista">
+                <li>
+                    <img src="img/phone.png" alt="Telefone" width="30px" height="30px">
+                    <span>(41) 99879-4774</span>
+                </li>
+                <li>
+                    <img src="img/email.png" alt="Email" width="30px" height="30px">
+                    <span>transportecoletivoaroeira@gmail.com</span>
+                </li>
+
+                <li>
+                    <img src="img/location.png" alt="Localização" width="30px" height="30px">
+                    <span>Av. Presidente Affonso Camargo, 330 - Jardim Botânico, Curitiba</span>
+                    </li>
+            </ul>
+        </div>
+         <p>© 2026 Transporte Coletivo Aroeira. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="js/contato.js"></script>
+</body>
+    </html>
